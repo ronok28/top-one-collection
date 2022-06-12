@@ -1,0 +1,95 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+a{text-decoration: none;}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: url(img/logo.jpg);
+    background-size: cover;
+    background position: center;
+}
+.top{
+    width: 100%;
+    height: 100px;
+    background:  rgba(4, 121, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 150px;
+}
+.logo_area{
+    width: 23%;
+}
+.logo_area a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo_area a img{
+    width: 70px;
+}
+.logo_area a h1{
+    color: white;
+    text transform: uppercase;
+    font-family: cursive;
+    margin-left: 15px;
+}
+.menu_area{
+    width: 25%;
+}
+.menu_area ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu_area ul li{
+    position: relative;
+}
+.menu_area ul li::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background: #00ffff;
+    bottom: -0;
+    left: 0;
+    transition: .5s all ease-in-out;
+}
+.menu_area ul li:hover::after{
+    width: 100%;
+}
+.menu_area ul li a{
+    color: white;
+    font-family: lato;
+    font-size: 20px;
+    transition: 0.3s all ease-in-out;
+}
+.menu_area ul li a:hover{
+    color: #00ffff;
+}
+.info{
+    text-align: center;
+    width: 100%;
+}
+.info h1{
+    color: limegreen;
+    font-family: lato;
+    font-size: 50px;
+}
+.btn button{
+    padding: 15px 45px;
+    background: transparent;
+    border: 2px solid aqua;
+    color: white;
+    font-size: 16px;
+    font-family: lato;
+    border-radius: 25px;
+    cursor: pointer;
+    position: relative;
+}
+.btn button::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
